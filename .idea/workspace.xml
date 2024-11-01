@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="496018b7-2aa3-45eb-9dca-a55ca7853ca0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/features/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToe.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToeSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/pages/TicTacToePage.java" afterDir="false" />
+    <list default="true" id="496018b7-2aa3-45eb-9dca-a55ca7853ca0" name="Changes" comment="Project setup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToe.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToe.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToeSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +59,7 @@
       <recent name="stepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner (1)">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Player X wins the game (1)">
     <configuration name="Scenario: Player X wins the game (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/tests/features/TicTacToe.feature" />
@@ -177,8 +167,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRunner (1)" />
         <item itemvalue="Cucumber Java.Scenario: Player X wins the game (1)" />
+        <item itemvalue="JUnit.TestRunner (1)" />
         <item itemvalue="Cucumber Java.Scenario: Player cannot override a cell that is already occupied" />
         <item itemvalue="Cucumber Java.Scenario: Player tries to select an occupied cell (1)" />
         <item itemvalue="JUnit.TestRunner" />
@@ -194,7 +184,28 @@
       <option name="presentableId" value="Default" />
       <updated>1728846500060</updated>
     </task>
+    <task id="LOCAL-00001" summary="Project setup">
+      <option name="closed" value="true" />
+      <created>1730462024484</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730462024484</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Project setup">
+      <option name="closed" value="true" />
+      <created>1730462031643</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730462031643</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
