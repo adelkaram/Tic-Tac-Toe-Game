@@ -1,5 +1,7 @@
 package tests;
 
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.BeforeAll;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,9 +9,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
-    public void setUpDriver() {
+    public static void setUpDriver() {
 
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -18,7 +20,7 @@ public class BaseTest {
     }
 
 
-    public void tearDownDriver() {
+    public static void tearDownDriver() {
         if (driver != null) {
             driver.quit();
         }

@@ -12,7 +12,6 @@ public class TicTacToeSteps extends BaseTest {
 
     @Given("the Tic Tac Toe game is open")
     public void theTicTacToeGameIsOpen() {
-        setUpDriver(); // Initialize the ChromeDriver
         driver.get("https://testing-tictactoe-sxsi7kqutq-ew.a.run.app/");
         ticTacToePage = new TicTacToePage(driver);
     }
