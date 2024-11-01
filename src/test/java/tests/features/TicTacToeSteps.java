@@ -37,5 +37,19 @@ public class TicTacToeSteps extends BaseTest {
         Assert.assertEquals(ticTacToePage.getCell(cellNumber).getText(), expectedValue);
     }
 
+    @And("player O selects cell {int}")
+    public void playerOSelectsCell(int cellNumber) {
+        ticTacToePage.selectCell(cellNumber);
+    }
+
+    @When("the player goes back to move {int}")
+    public void goToMove(int moveIndex) {
+        ticTacToePage.goToMove(moveIndex);
+    }
+
+    @Then("cell {int} should be empty")
+    public void cellShouldBeEmpty(int cellNumber) {
+        Assert.assertTrue(ticTacToePage.getCell(cellNumber).getText().isEmpty());
+    }
 
 }

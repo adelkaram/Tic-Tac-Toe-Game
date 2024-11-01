@@ -19,4 +19,19 @@ public class TicTacToePage {
         getCell(cellNumber).click();
     }
 
+    public void goToMove(int moveIndex) {
+        WebElement goToMoveButton = driver.findElement(By.id("go-to-move-btn"));
+
+        String expectedText = "Go to move #" + moveIndex;
+
+        if (goToMoveButton.getText().equals(expectedText)) {
+            goToMoveButton.click();
+        } else {
+            throw new IllegalStateException("The button text does not match the expected move: " + expectedText);
+        }
+    }
+
+
+
+
 }
