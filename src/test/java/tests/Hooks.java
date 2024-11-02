@@ -1,8 +1,9 @@
-package tests.pages;
+package tests;
 
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
-import tests.BaseTest;
+
+import static tests.Utility.ExtentManager.extent;
 
 public class Hooks {
 
@@ -14,5 +15,6 @@ public class Hooks {
     @After
     public void tearDown() {
         BaseTest.tearDownDriver();
+        extent.flush();
     }
 }

@@ -5,13 +5,17 @@ import org.junit.Assert;
 import tests.pages.TicTacToePage;
 import tests.BaseTest;
 
-public class TicTacToeSteps extends BaseTest {
+import static tests.BaseTest.driver;
+import static tests.BaseTest.setUpDriver;
+
+public class TicTacToeSteps {
 
 
     TicTacToePage ticTacToePage;
 
     @Given("the Tic Tac Toe game is open")
     public void theTicTacToeGameIsOpen() {
+        setUpDriver();
         driver.get("https://testing-tictactoe-sxsi7kqutq-ew.a.run.app/");
         ticTacToePage = new TicTacToePage(driver);
     }
