@@ -7,7 +7,6 @@ import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import tests.Utility.ExtentManager;
 
-import static tests.Utility.ExtentManager.extent;
 
 public class Hooks {
     private ExtentReports extent = ExtentManager.getExtent();
@@ -19,7 +18,6 @@ public class Hooks {
     }
     @Before (order = 1)
     public void beforeScenario(Scenario scenario) {
-        // Create a new test in the Extent Report for the current scenario
         test = extent.createTest(scenario.getName());
     }
 
@@ -31,19 +29,14 @@ public class Hooks {
 
     @After (order = 1)
     public void afterScenario(Scenario scenario) {
-        // Log the result of the scenario
+
         if (scenario.isFailed()) {
             test.fail("Scenario failed");
         } else {
             test.pass("Scenario passed");
         }
 
-        // Flush the report after each scenario
-        extent.flush();
-    }
 
-    // Getter for ExtentTest to use in other parts of the code
-    public static ExtentTest getTest() {
-        return test;
+        extent.flush();
     }
 }

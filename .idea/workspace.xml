@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="496018b7-2aa3-45eb-9dca-a55ca7853ca0" name="Changes" comment="Add Report Package">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="496018b7-2aa3-45eb-9dca-a55ca7853ca0" name="Changes" comment="Refactor previous move tc and ExtentManager">
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Utility/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Utility/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/features/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/features/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToe.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToe.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/features/TicTacToeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/pages/TicTacToePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/pages/TicTacToePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,7 @@
       <recent name="stepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Player cannot override a cell that is already occupied">
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Scenario: Player X wins the game (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/tests/features/TicTacToe.feature" />
@@ -178,8 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Player cannot override a cell that is already occupied" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Player cannot override a cell that is already occupied" />
         <item itemvalue="Cucumber Java.Scenario: Player can go back to a previous move" />
         <item itemvalue="JUnit.TestRunner (1)" />
         <item itemvalue="Cucumber Java.Scenario: Player X wins the game (1)" />
@@ -243,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730554086278</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactor previous move tc and ExtentManager">
+      <option name="closed" value="true" />
+      <created>1730595782150</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730595782150</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,6 +264,7 @@
     <MESSAGE value="the second test case" />
     <MESSAGE value="Add Hooks file" />
     <MESSAGE value="Add Report Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Report Package" />
+    <MESSAGE value="Refactor previous move tc and ExtentManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor previous move tc and ExtentManager" />
   </component>
 </project>
