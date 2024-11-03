@@ -2,13 +2,14 @@ package tests.features;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import tests.pages.TicTacToePage;
 import tests.BaseTest;
+import tests.pages.TicTacToePage;
 
-import static tests.BaseTest.driver;
-import static tests.BaseTest.setUpDriver;
 
-public class TicTacToeSteps {
+import java.util.Map;
+
+
+public class TicTacToeSteps extends BaseTest {
 
 
     TicTacToePage ticTacToePage;
@@ -55,4 +56,14 @@ public class TicTacToeSteps {
         Assert.assertTrue(ticTacToePage.getCell(cellNumber).getText().isEmpty());
     }
 
+    @Then("Check if board state reverts accurately to the chosen previous move {int}")
+    public void checkIfBoardStateRevertsAccuratelyToTheChosenPreviousMoveCellNumber(int moveIndex) {
+        Map<Integer, String[]> history = ticTacToePage.getBoardHistory();
+
+
+        String[] expectedState = history.get(moveIndex);
+        String[] currentState = ticTacToePage.getCurrentBoardState();
+
+        Assert.assertEquals(expectedState, currentState);
+    }
 }

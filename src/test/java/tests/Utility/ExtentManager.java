@@ -8,7 +8,7 @@ public class ExtentManager {
     public static ExtentReports extent;
     private static ExtentTest test;
 
-   
+
     public static ExtentReports createInstance() {
         ExtentSparkReporter sparkReporter = new ExtentSparkReporter("test-output/ExtentReport.html");
         sparkReporter.config().setReportName("Tic Tac Toe Test Automation Report");
